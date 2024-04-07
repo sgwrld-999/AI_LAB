@@ -1,5 +1,5 @@
-5 3 4 
-0 2 6 
-1 7 8 
-Number of states checked using Greedy BFS: 397
-Number of states checked using A* Search: 2880
+3 7 5 
+8 4 2 
+6 1 0 
+Number of states checked using Greedy BFS: 515
+Number of states checked using A* Search: 90405

@@ -1,6 +1,6 @@
 import random
-import copy
-import heapq
+import copy#Used for
+import heapq #Used for importing the priority queues
 
 goal_matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 0]]
 possible_input = [1, 2, 3, 4, 5, 6, 7, 8, 0]
@@ -9,7 +9,7 @@ state_matrix = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
 for i in range(3):
     for j in range(3):
         state_matrix[i][j] = random.choice(possible_input)
-        possible_input.remove(state_matrix[i][j])
+        possible_input.remove(state_matrix[i][j])#It's used for ensuring that it'll not have a duplicate value
 
 state_matrix_copy = copy.deepcopy(state_matrix)
 
@@ -115,6 +115,10 @@ def moveUp(matrix):
 no_of_states_checked = 0
 
 state_matrix = state_matrix_copy
+
+
+#Manhattan distance is a distance metric that measures the distance between two
+#points in a grid-based system (like a chessboard) along the grid lines.
 
 
 def heuristic(matrix, goal_matrix):
